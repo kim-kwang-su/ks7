@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.spring.ks.dao.EventDao">
+	<select id="getLoveList" parameterType="map" resultType="hashmap">
+		select * from pe_event_cmtbrd
+		where status = '0'	
+		and eventid = #{eventid}	
+		order by regdate desc
+	</select>
+	
+	<insert id="eventLoveInsert" parameterType="map">	
+		insert into pe_event_cmtbrd(serialnumber, managerid, userid, username, contents, status, eventid) 		                              	                          
+		select															
+		    (select nvl(max(serialnumber),0)+1 from pe_event_cmtbrd)		
+		    , #{managerid}, #{userid}, #{username}, #{contents}, '0', #{eventid}                                      						
+		from dual									     			      
+	</insert>
+</mapper>

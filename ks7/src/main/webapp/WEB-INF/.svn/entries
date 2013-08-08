@@ -1,0 +1,74 @@
+10
+
+dir
+29
+https://dev.naver.com/svn/rhkdtn21/ks7/src/main/webapp/WEB-INF
+https://dev.naver.com/svn/rhkdtn21
+
+
+
+2013-07-23T06:23:36.065595Z
+29
+rhkdtn21
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e4ea8680-b340-44b9-8833-8b12c10fd855
+
+classes
+dir
+
+properties
+dir
+
+spring
+dir
+
+views
+dir
+
+web.xml
+file
+
+
+
+
+2013-08-07T07:19:30.747000Z
+794bca0c37ba62b1cff2a4fbe1aa67ba
+2013-07-16T01:02:12.732396Z
+10
+rhkdtn21
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2126
+

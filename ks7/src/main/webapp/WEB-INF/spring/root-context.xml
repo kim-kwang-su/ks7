@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<!-- 1.DataSource 설정(DB연결 정보) -->
+	<bean id="dataSource" class="org.apache.tomcat.dbcp.dbcp.BasicDataSource" destroy-method="close">
+	<!-- tomcat.dbcp.jar 추가 -->
+											
+    	<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@oracle.suaro7979.cafe24.com:1521:orcl"/>
+        <property name="username" value="suaro7979"/>
+        <property name="password" value="su1219"/>
+        
+        <!-- 
+        <property name="url" value="jdbc:oracle:thin:@211.44.251.173:1521:pnora1"/>
+        <property name="username" value="pneduuser"/>
+        <property name="password" value="purunetuser123"/> 
+        -->
+    </bean>
+    
+    <!-- 2.SqlSessionFactory설정(dataSource주입, mapper파일에 대한 정보) -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">    
+        <!-- dataSource설정 -->
+        <property name="dataSource" ref="dataSource"/>        
+    </bean>
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="org.spring.ks.dao"/>
+	</bean>
+    
+   	<!-- 3. SqlSessionTemplate설정(SqlSessionFactory주입) -->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <!--  생성자 0번째 인자에 sqlSessionFactory를 넣어라 -->
+        <constructor-arg ref="sqlSessionFactory" index="0"/>
+    </bean>
+    
+    
+    <!-- json START -->
+	<bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
+		<property name="contentType" value="text/plain;charset=utf-8"/>
+	</bean>
+    <!-- json END -->
+    
+    <!-- filedownload START -->
+    <bean id="fileDownloadView" class="org.spring.ks.view.FileDownloadView" />
+    <!-- filedownload END -->
+		
+</beans>

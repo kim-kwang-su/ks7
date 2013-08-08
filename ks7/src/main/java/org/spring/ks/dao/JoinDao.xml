@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.spring.ks.dao.JoinDao">
+	<insert id="memberInsert" parameterType="map">
+		INSERT INTO PE_MEMBER(
+		    SERIALNUMBER,
+		    MANAGERID,
+		    USERID,
+		    USERPWD,
+		    USERNAME,
+		    EMAIL,
+		    STATUS,		    
+		    BIRTH,
+		    BIRTH_FL,
+		    ADDRESS,
+		    JOB,
+		    HOME_TEL,
+		    HAND_TEL,
+		    DM_FL,
+		    DS_FL
+		  )
+		  SELECT
+		    (SELECT NVL(MAX(SERIALNUMBER),0)+1 FROM PE_MEMBER),
+		    '11_20100105_000000000000000000113145',
+		    #{userid},
+		    #{userpwd},
+		    #{username},
+		    #{email},
+		    '1',
+		    #{birth},
+		    #{birth_fl},
+		    #{address},
+		    #{job},
+		    #{home_tel},
+		    #{hand_tel},
+		    #{dm_fl},
+		    #{ds_fl}		   
+		 FROM DUAL
+	</insert>
+</mapper>

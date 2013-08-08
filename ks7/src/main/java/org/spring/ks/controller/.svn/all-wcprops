@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/rhkdtn21/!svn/ver/27/ks7/src/main/java/org/spring/ks/controller
+END
+UrlController.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/rhkdtn21/!svn/ver/10/ks7/src/main/java/org/spring/ks/controller/UrlController.java
+END
+JoinController.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/rhkdtn21/!svn/ver/27/ks7/src/main/java/org/spring/ks/controller/JoinController.java
+END
+EventController.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/rhkdtn21/!svn/ver/12/ks7/src/main/java/org/spring/ks/controller/EventController.java
+END
+LoginController.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/rhkdtn21/!svn/ver/24/ks7/src/main/java/org/spring/ks/controller/LoginController.java
+END
+BoardController.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/rhkdtn21/!svn/ver/18/ks7/src/main/java/org/spring/ks/controller/BoardController.java
+END

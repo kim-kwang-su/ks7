@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/rhkdtn21/!svn/ver/27/ks7/src/main/java/org/spring/ks/service
+END
+BoardService.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/rhkdtn21/!svn/ver/10/ks7/src/main/java/org/spring/ks/service/BoardService.java
+END
+BoardServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/rhkdtn21/!svn/ver/10/ks7/src/main/java/org/spring/ks/service/BoardServiceImpl.java
+END
+LoginService.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/rhkdtn21/!svn/ver/12/ks7/src/main/java/org/spring/ks/service/LoginService.java
+END
+LoginServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/rhkdtn21/!svn/ver/12/ks7/src/main/java/org/spring/ks/service/LoginServiceImpl.java
+END
+JoinService.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/rhkdtn21/!svn/ver/27/ks7/src/main/java/org/spring/ks/service/JoinService.java
+END
+EventService.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/rhkdtn21/!svn/ver/12/ks7/src/main/java/org/spring/ks/service/EventService.java
+END
+JoinServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/rhkdtn21/!svn/ver/27/ks7/src/main/java/org/spring/ks/service/JoinServiceImpl.java
+END
+EventServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/rhkdtn21/!svn/ver/12/ks7/src/main/java/org/spring/ks/service/EventServiceImpl.java
+END

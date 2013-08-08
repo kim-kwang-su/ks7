@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/rhkdtn21/!svn/ver/22/ks7/src/main/webapp/WEB-INF/views/board
+END
+boardDetail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/rhkdtn21/!svn/ver/22/ks7/src/main/webapp/WEB-INF/views/board/boardDetail.jsp
+END
+boardWrite.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/rhkdtn21/!svn/ver/22/ks7/src/main/webapp/WEB-INF/views/board/boardWrite.jsp
+END
+boardUpdate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/rhkdtn21/!svn/ver/10/ks7/src/main/webapp/WEB-INF/views/board/boardUpdate.jsp
+END
+boardList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/rhkdtn21/!svn/ver/15/ks7/src/main/webapp/WEB-INF/views/board/boardList.jsp
+END
